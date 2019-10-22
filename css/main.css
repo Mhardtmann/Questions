@@ -1,0 +1,140 @@
+/*** sectioning elements ***/
+@font-face {
+    font-family: 'verycooljosh';
+    src:url (<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">);
+
+}
+@font-face {
+    font-family: 'evansucks';
+    src:url (<link href="<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">" rel="stylesheet">);
+
+}
+
+@font-face {
+    font-family: 'bruh';
+    src:url (<link href="<link href="<link href="<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">" rel="stylesheet">" rel="stylesheet">" rel="stylesheet">);
+
+}
+body {
+
+}
+
+header {
+  
+}
+
+main {
+  
+}
+
+footer {
+
+}
+
+nav{
+    font-family:bruh;
+    color: rgb(0, 0, 0)
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+
+/**** content styles ***/
+
+h1 {
+font-family:verycooljosh;
+color: rgb(179, 0, 0)
+}
+
+h2 {
+    font-family:verycooljosh;
+    color: rgb(0, 81, 255)
+}
+
+h3 {
+    font-family:verycooljosh;
+    color: rgb(0, 60, 255)
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+font-family: evansucks;
+color: rgb(255, 255, 255)
+}
+
+blockquote {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+/*** image styles ***/
+
+img  {
+
+}
+
+
+/*** link styles ***/
+
+a:link {
+    
+}
+
+a:visited {
+    font-family:bruh;
+    color: rgb(0, 0, 0)
+    }
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}

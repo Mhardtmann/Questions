@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Resets
+   ========================================================================== */
+
+/**
+ * Set box-sizing to border-box for all elements.
+ *
+ * Technique from:
+ * https://css-tricks.com/box-sizing/
+ */
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    /*  */
+}
+
+/**
+ * Remove the margin on the body.
+ */
+body {
+  margin: 0;
+}

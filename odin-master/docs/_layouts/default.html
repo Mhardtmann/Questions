@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+      {% include header.html %}
+
+      <main>
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>{{ page.title}}</h1>
+            </div>
+          </div>
+
+          <div class="row reverse-lg">
+            {% if page.title == "About" or page.title == "Download" %}
+              <div class="col-xs-12">
+                {{ content }}
+              </div>
+            {% else %}
+              <div class="col-lg-3">
+                {% include toc.html %}
+              </div>
+
+              <div class="col-lg-9">
+                {{ content }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </main>
+
+
+      {% include footer.html %}
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="{{ "/js/odin-0.8.0.js" | prepend: site.github.url }}"></script>
+
+  </body>
+
+</html>

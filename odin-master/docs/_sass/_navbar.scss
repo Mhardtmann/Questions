@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar {
+  align-items: center;
+  background-color: $gray-very-light;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.4rem;
+}
+
+.navbar-menu {
+  background-color: inherit;
+  display: flex;
+  position: relative;
+  z-index: 998; /* make sure the menu stays in front of all other content */
+}
+
+.navbar-spread {
+  display: block;
+}
+
+.navbar-spread .navbar-menu {
+  display: block;
+}
+
+.navbar-spread .navbar-menu ul {
+  display: flex;
+  justify-content: space-around
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 0.4rem;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  display: block;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  color: $gray-very-dark;
+  font-size: 2.0rem;
+  font-weight: 500;
+  margin: 0 auto 0 0;
+}
+
+.navbar-brand a:link,
+.navbar-brand a:visited {
+
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:active {
+
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  display: block;
+  font-size: 1.0rem;
+
+  /* http://stackoverflow.com/questions/29930933/absolute-positioned-item-in-a-flex-container-still-gets-considered-as-item-in-ie */
+  margin: 0 0.2rem 0 auto;
+
+  padding: 0.6rem 0;
+}
+
+.menu-dismiss {
+  background-color: transparent;
+  border: none;
+  color: $gray-dark;
+  display: block;
+  font-size: 24px;
+  margin: 0.2rem;
+  right: 0;
+  padding: 0.2rem;
+  position: absolute;
+  top: 0;
+  z-index: 999; /* make sure this is higher than the navbar-menu */
+}
+
+.navbar-slideout .navbar-menu,
+.navbar-slideout-xs .navbar-menu,
+.navbar-slideout-sm .navbar-menu,
+.navbar-slideout-md .navbar-menu,
+.navbar-slideout-lg .navbar-menu,
+.navbar-slideout-xl .navbar-menu {
+  display: block;
+  height: 100%;
+  left: -280px;
+  opacity: 0.96;
+  overflow: auto;
+  position: fixed;
+  top:0;
+  transition-property: left;
+  transition-duration: 0.4s;
+  width: 280px;
+}
+
+.navbar-slideout .navbar-menu ul,
+.navbar-slideout-xs .navbar-menu ul,
+.navbar-slideout-sm .navbar-menu ul,
+.navbar-slideout-md .navbar-menu ul,
+.navbar-slideout-lg .navbar-menu ul,
+.navbar-slideout-xl .navbar-menu ul {
+  flex-direction: column;
+}
+
+.navbar-slideout .menu-shown,
+.navbar-slideout-xs .menu-shown,
+.navbar-slideout-sm .menu-shown,
+.navbar-slideout-md .menu-shown,
+.navbar-slideout-lg .menu-shown,
+.navbar-slideout-xl .menu-shown {
+  left: 0;
+  transition-property: left;
+  transition-duration: 0.4s;
+}
+
+@media (min-width: $sm-min-width) {
+  .navbar-slideout-sm .navbar-menu {
+    background-color: transparent;
+    height: auto;
+    overflow: auto;
+    position: static;
+    width: auto;
+  }
+
+  .navbar-slideout-sm .navbar-menu ul {
+    flex-direction: row;
+  }
+
+  .navbar-slideout-sm .menu-dismiss,
+  .navbar-slideout-sm .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $md-min-width) {
+  .navbar-slideout-md .navbar-menu {
+    background-color: transparent;
+    height: auto;
+    overflow: auto;
+    position: static;
+    width: auto;
+  }
+
+  .navbar-slideout-md .navbar-menu ul {
+    flex-direction: row;
+  }
+
+  .navbar-slideout-md .menu-dismiss,
+  .navbar-slideout-md .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $lg-min-width) {
+  .navbar-slideout-lg .navbar-menu {
+    background-color: transparent;
+    height: auto;
+    overflow: auto;
+    position: static;
+    width: auto;
+  }
+
+  .navbar-slideout-lg .navbar-menu ul {
+    flex-direction: row;
+  }
+
+  .navbar-slideout-lg .menu-dismiss,
+  .navbar-slideout-lg .menu-toggle {
+    display: none;
+  }
+}
